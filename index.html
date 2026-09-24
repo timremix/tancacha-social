@@ -1,1 +1,105 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tancacha Social</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span>TS</span>
+            <div>
+                <h1>Tancacha Social</h1>
+                <p>La comunidad de nuestro pueblo</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="composer">
+            <h2>¿Qué querés contar?</h2>
+
+            <p class="anonymous-info">
+                🕶️ Tu publicación aparecerá de forma anónima
+            </p>
+
+            <textarea
+                id="contenido"
+                maxlength="1000"
+                placeholder="Escribí lo que quieras compartir con la comunidad..."
+            ></textarea>
+
+            <div class="composer-footer">
+                <span id="contador">0 / 1000</span>
+
+                <button id="publicarBtn">
+                    PUBLICAR ANÓNIMAMENTE
+                </button>
+            </div>
+        </section>
+
+
+        <section class="feed">
+
+            <div class="feed-header">
+                <h2>Publicaciones</h2>
+
+                <select id="orden">
+                    <option value="recientes">Más recientes</option>
+                    <option value="populares">Más populares</option>
+                </select>
+            </div>
+
+
+            <div id="publicaciones">
+
+                <article class="post">
+
+                    <div class="post-header">
+                        <div class="avatar">🕶️</div>
+
+                        <div>
+                            <strong>Anónimo #4821</strong>
+                            <small>Hace unos minutos</small>
+                        </div>
+                    </div>
+
+                    <p class="post-content">
+                        Acá aparecerán las publicaciones de la comunidad.
+                    </p>
+
+                    <div class="post-actions">
+                        <button>👍 0</button>
+                        <button>💬 0</button>
+                        <button>🚩 Denunciar</button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Tancacha Social</p>
+        <p>Comunidad anónima de Tancacha</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+```
 
